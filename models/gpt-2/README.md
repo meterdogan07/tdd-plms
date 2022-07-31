@@ -13,7 +13,7 @@ The most comprehensive flow is:
 4. Finetunning (Optional for zero-shot tasks)
 5. Downstream Task Evaluation or Text Generation
 
-We've provided several scripts for pretraining GPT in examples directory, as well as scripts for both zero-shot and fine-tuned downstream tasks including MNLI, RACE, WikiText103, and LAMBADA evaluation. There is also a script for GPT interactive text generation.
+Several scripts are provided for pretraining GPT in examples directory.
 
 ## 1. Installation and Setting Environment
 
