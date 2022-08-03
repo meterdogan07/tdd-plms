@@ -1,7 +1,7 @@
 # Pre-process Default Documents (Corpus)
 **pre-process.py**  script converts to each `tdd-corpus-XX.txt` file to loose json format as:
 ```
-{"src": "The Internet", "text": "The quick brown fox", "type": "Tur", "id": "0", "title": "tdd-corpus-XX"}
+{"src": "The Internet", "text": "Havanın güzel olması bizi sevindirdi.", "type": "Tur", "id": "0", "title": "tdd-corpus-XX"}
 ```
 You need run a seperate script for each `tdd-corpus-XX.txt`.
 
