@@ -20,8 +20,9 @@ def build_spiece_tokenizer(vocab_size):
     tokenizer.decoder = decoders.ByteLevel()
 
     # Set training settings
-    vocab_size = vocab_size - len(special_tokens)
     special_tokens = ["<s>", "</s>", "<unk>", "<pad>", "<mask>"]
+    vocab_size = vocab_size - len(special_tokens)
+    
     
     # Change trainer to match tokenizer model
     trainer = trainers.BpeTrainer(vocab_size=vocab_size, special_tokens=special_tokens) 
@@ -42,4 +43,4 @@ def build_spiece_tokenizer(vocab_size):
 
 for m, v in (("8k", 2**13), ("16k", 2**14), ("32k", 2**15), ("64k", 2**16)):
     toke = build_spiece_tokenizer(v)
-    toke.save(f"Tokenizers/BPE.byte.tokenizer.trwiki-67.{m}.json", pretty=True)
+    toke.save(f"Tokenizers/BPE.byte.tokenizer.{m}.json", pretty=True)
