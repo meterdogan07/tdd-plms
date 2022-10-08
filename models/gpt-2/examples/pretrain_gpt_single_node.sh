@@ -8,9 +8,7 @@
 N_GPUS=1
 
 CHECKPOINT_PATH=checkpoints/gpt2
-VOCAB_FILE=data/gpt2-vocab.json
-MERGE_FILE=data/gpt2-merges.txt
-DATA_PATH=data/meg-gpt2_text_document
+DATA_PATH=~/Corpus/tdd-plms/models/gpt-2/test_gpt2_text_document.bin
 
 GPT_ARGS=" \
     --num-layers 24 \
@@ -25,8 +23,8 @@ GPT_ARGS=" \
     --min-lr 1.0e-5 \
     --lr-decay-style cosine \
     --train-iters 5000 \
-    --vocab-file $VOCAB_FILE \
-    --merge-file $MERGE_FILE \
+    --tokenizer-type PretrainedFromHF \
+    --tokenizer-name-or-path pretrained_tokenizer/ \
     --data-impl mmap \
     --split 949,50,1 \
     --distributed-backend nccl \
@@ -50,12 +48,20 @@ DATA_ARGS=" \
     --data-path $DATA_PATH \
     "
 
-ALL_ARGS="$GPT_ARGS $OUTPUT_ARGS $DATA_ARGS"
+#ALL_ARGS="$GPT_ARGS $OUTPUT_ARGS $DATA_ARGS"
+
+#LAUNCHER="deepspeed --num_gpus $N_GPUS"
+
+#CMD="$LAUNCHER ~/Corpus/Megatron-DeepSpeed/pretrain_gpt.py $ALL_ARGS"
+
+#echo $CMD
+
+#$CMD
+
+CMD="pretrain_gpt.py $GPT_ARGS $OUTPUT_ARGS $DATA_ARGS"
+
+N_GPUS=1
 
 LAUNCHER="deepspeed --num_gpus $N_GPUS"
 
-CMD="$LAUNCHER pretrain_gpt.py $ALL_ARGS"
-
-echo $CMD
-
-$CMD
+$LAUNCHER $CMD

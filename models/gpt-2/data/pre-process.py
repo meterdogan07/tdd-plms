@@ -17,9 +17,9 @@ output_filename = output_dir + "/" + filename + ".jsonl"
 
 data_list = []
 with open(args.file_path, "r", encoding="UTF-8") as f:
-    lines = f.readlines()
+    #lines = f.readlines()
     print(f"Reading the data at: {filename}")
-    for idx, line in tqdm(enumerate(lines)):
+    for idx, line in tqdm(enumerate(f)):
         data = {"src": "The Internet", 
                 "text": line.rstrip(), 
                 "type": "Tur",
