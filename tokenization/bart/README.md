@@ -18,6 +18,18 @@ export ROOT_DIR=$(pwd)
 
 The main data location is: `/kuacc/users/asafaya19/tdd-corpora`. Use only `/kuacc/users/asafaya19/tdd-corpora/tdd-corpus-00.txt` for tokenization.
 
+## Create 256/1024 versions
+Use the code below to create the different context length files in your work dir:
+
+```
+mkdir tdd-corpora-1024-split/
+mkdir tdd-corpora-256-split/
+for file in /kuacc/users/asafaya19/tdd-corpora/*; do
+    head -n 4500000 $file > tdd-corpora-256-split/$(basename $file)
+    tail -n 450000 $file > tdd-corpora-1024-split/$(basename $file)
+done
+```
+
 ### Split Data
 
 We split the `tdd-corpus-00.txt` in to 10 files to work with multiple CPUs quicker. Each tdd-corpus contains 500,000 lines. Use the following command to split files:
