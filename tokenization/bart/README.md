@@ -29,6 +29,7 @@ for file in /kuacc/users/asafaya19/tdd-corpora/*; do
     tail -n 450000 $file > tdd-corpora-1024-split/$(basename $file)
 done
 ```
+You can check the length of a `tdd-corpus-XX.txt` file by running the code `wc -l tdd-corpus-16.txt`. Ratio is important in that procedure.
 
 ### Split Data
 
