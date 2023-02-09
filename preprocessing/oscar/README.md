@@ -11,7 +11,7 @@ We should add Turkish (`tr`) as a new field to `languages_id.py`.
 
 Please take a look at the pdf [explanation filtering pipeline](https://drive.google.com/file/d/1cCJ8sWE88TRLDAa3eHLmXO4JlkR2QzLY/view?usp=sharing) for an explanation of the filtering pipeline. Try to understand each step and take notes for important points. 
 
-#### 1. Define the lists of stop words and flagged words, and check how the anonymization and the normalization of texts are done
+#### 1. Define the lists of stop words and flagged words, and check how the normalization of texts are done
 
 You might want to add/redefine the lists of stop words (closed class words) and flagged words for `Turkish` which are must for robustness or ethical reasons in the files [stopwords.py](https://github.com/bigscience-workshop/data-preparation/blob/main/preprocessing/training/01b_oscar_cleaning_and_filtering/stopwords.py) and [flagged_words.py](https://github.com/bigscience-workshop/data-preparation/blob/main/preprocessing/training/01b_oscar_cleaning_and_filtering/flagged_words.py).
 
