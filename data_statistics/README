@@ -1,0 +1,14 @@
+This directory includes dataset statistics extracting scripts. The results are saved on the directories below:
+    Processed-Kitap
+    Processed-MC4
+    Processed-Oscar
+    Processed-SketchEngine
+
+Under these directories, there are 3 kinds of files:
+    1- The summary files that has the resulting statistics.
+    2- The xxxx_data_formatted files that include the data formatted as JSON lines.
+    3- The xxxx_stats_formatted files that include the data statistics for each samples.
+
+The summary files are contained in the repository, but the xxxx_data_formatted and xxxx_stats_formatted 
+can be found under the "/userfiles/merdogan18/data_statistics" directory in the KUACC cluster.
+    
