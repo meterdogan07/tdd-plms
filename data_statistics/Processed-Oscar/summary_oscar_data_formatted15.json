@@ -1,0 +1,28 @@
+{
+  "all": {
+    "size(GB)": 60.72827496007085,
+    "total_samples": 10826031,
+    "length_total": 52315267915.0,
+    "nltk_word_total": 8116332762.0,
+    "nltk_sentence_total": 351215336.0,
+    "punctutation_total": 1366638582.0,
+    "ascii_letters_total": 38590883080.0,
+    "ascii_lowercase_total": 35864977469.0,
+    "ascii_uppercase_total": 2725905611.0,
+    "digits_total": 969653717.0,
+    "whitespace_total": 6917144225.0,
+    "word_total": 6916103940.0,
+    "line_total": 501656257.0,
+    "length_avg": 4832.358961007963,
+    "nltk_word_avg": 749.7052947659212,
+    "nltk_sentence_avg": 32.44174490170959,
+    "punctutation_avg": 126.23634478785439,
+    "ascii_letters_avg": 3564.638146703995,
+    "ascii_lowercase_avg": 3312.846367149697,
+    "ascii_uppercase_avg": 251.79177955429833,
+    "digits_avg": 89.5668705363951,
+    "whitespace_avg": 638.9363031567156,
+    "word_avg": 638.8402120777226,
+    "line_avg": 46.33796605607355
+  }
+}
