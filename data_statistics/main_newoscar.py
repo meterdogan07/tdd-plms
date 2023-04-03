@@ -21,8 +21,8 @@ def main():
     ct_doc = 0
     G_params = [0,0,0,0,0,0,0,0,0,0,0]
 
-    formatted_dataset = open("/kuacc/users/merdogan18/hpc_run/tdd-plms/data_statistics/Processed-newoscar/newoscar_data_formatted.json", "a")
-    count_dictionaries = open("/kuacc/users/merdogan18/hpc_run/tdd-plms/data_statistics/Processed-newoscar/newoscar_stats_formatted.json", "a")
+    formatted_dataset = open("/kuacc/users/merdogan18/hpc_run/tdd-plms2/data_statistics/Processed-newoscar/newoscar_data_formatted2.json", "a")
+    count_dictionaries = open("/kuacc/users/merdogan18/hpc_run/tdd-plms2/data_statistics/Processed-newoscar/newoscar_stats_formatted2.json", "a")
     
     for doc_num in range(1,51):
         print(doc_num)
@@ -160,9 +160,8 @@ def main():
     avg_dict_count["all"]["line_avg"] = G_params[9]/total_samples
 
     # Writing to sample.json
-
     total_json_object = json.dumps(avg_dict_count, indent=20, ensure_ascii=False)
-    with open("/kuacc/users/merdogan18/hpc_run/tdd-plms/data_statistics/Processed-newoscar/summary_newoscar_stats_formatted.json", "w") as outfile:
+    with open("/kuacc/users/merdogan18/hpc_run/tdd-plms2/data_statistics/Processed-newoscar/summary_newoscar_stats_formatted2.json", "w") as outfile:
         outfile.write(total_json_object)
 
     formatted_dataset.close()

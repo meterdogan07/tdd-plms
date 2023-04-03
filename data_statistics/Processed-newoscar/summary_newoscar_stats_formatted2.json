@@ -1,0 +1,178 @@
+{
+                    "1": {
+                                        "sample_size": 269471
+                    },
+                    "2": {
+                                        "sample_size": 269815
+                    },
+                    "3": {
+                                        "sample_size": 267709
+                    },
+                    "4": {
+                                        "sample_size": 270195
+                    },
+                    "5": {
+                                        "sample_size": 268180
+                    },
+                    "6": {
+                                        "sample_size": 269764
+                    },
+                    "7": {
+                                        "sample_size": 271742
+                    },
+                    "8": {
+                                        "sample_size": 270455
+                    },
+                    "9": {
+                                        "sample_size": 269388
+                    },
+                    "10": {
+                                        "sample_size": 270228
+                    },
+                    "11": {
+                                        "sample_size": 270184
+                    },
+                    "12": {
+                                        "sample_size": 267936
+                    },
+                    "13": {
+                                        "sample_size": 271192
+                    },
+                    "14": {
+                                        "sample_size": 268805
+                    },
+                    "15": {
+                                        "sample_size": 269202
+                    },
+                    "16": {
+                                        "sample_size": 270871
+                    },
+                    "17": {
+                                        "sample_size": 270547
+                    },
+                    "18": {
+                                        "sample_size": 267937
+                    },
+                    "19": {
+                                        "sample_size": 269755
+                    },
+                    "20": {
+                                        "sample_size": 268141
+                    },
+                    "21": {
+                                        "sample_size": 269948
+                    },
+                    "22": {
+                                        "sample_size": 267375
+                    },
+                    "23": {
+                                        "sample_size": 270862
+                    },
+                    "24": {
+                                        "sample_size": 272131
+                    },
+                    "25": {
+                                        "sample_size": 271191
+                    },
+                    "26": {
+                                        "sample_size": 270215
+                    },
+                    "27": {
+                                        "sample_size": 269661
+                    },
+                    "28": {
+                                        "sample_size": 268957
+                    },
+                    "29": {
+                                        "sample_size": 268362
+                    },
+                    "30": {
+                                        "sample_size": 269103
+                    },
+                    "31": {
+                                        "sample_size": 268948
+                    },
+                    "32": {
+                                        "sample_size": 270017
+                    },
+                    "33": {
+                                        "sample_size": 269274
+                    },
+                    "34": {
+                                        "sample_size": 267698
+                    },
+                    "35": {
+                                        "sample_size": 272117
+                    },
+                    "36": {
+                                        "sample_size": 271387
+                    },
+                    "37": {
+                                        "sample_size": 270435
+                    },
+                    "38": {
+                                        "sample_size": 269288
+                    },
+                    "39": {
+                                        "sample_size": 271598
+                    },
+                    "40": {
+                                        "sample_size": 270690
+                    },
+                    "41": {
+                                        "sample_size": 270263
+                    },
+                    "42": {
+                                        "sample_size": 266037
+                    },
+                    "43": {
+                                        "sample_size": 269876
+                    },
+                    "44": {
+                                        "sample_size": 270483
+                    },
+                    "45": {
+                                        "sample_size": 268062
+                    },
+                    "46": {
+                                        "sample_size": 271321
+                    },
+                    "47": {
+                                        "sample_size": 268283
+                    },
+                    "48": {
+                                        "sample_size": 268842
+                    },
+                    "49": {
+                                        "sample_size": 270948
+                    },
+                    "50": {
+                                        "sample_size": 112276
+                    },
+                    "all": {
+                                        "size(GB)": 92.04837988968939,
+                                        "total_samples": 13327165,
+                                        "length_total": 67687092133.0,
+                                        "nltk_word_total": 10422085432.0,
+                                        "nltk_sentence_total": 454755675.0,
+                                        "punctutation_total": 1671262367.0,
+                                        "ascii_letters_total": 50114661272.0,
+                                        "ascii_lowercase_total": 46698676079.0,
+                                        "ascii_uppercase_total": 3415985193.0,
+                                        "digits_total": 1219502840.0,
+                                        "whitespace_total": 8903530114.0,
+                                        "word_total": 8913576226.0,
+                                        "line_total": 625845335.0,
+                                        "length_avg": 5078.881527541679,
+                                        "nltk_word_avg": 782.0181885644846,
+                                        "nltk_sentence_avg": 34.122461528764745,
+                                        "punctutation_avg": 125.40269194536123,
+                                        "ascii_letters_avg": 3760.339222332732,
+                                        "ascii_lowercase_avg": 3504.021753988939,
+                                        "ascii_uppercase_avg": 256.31746834379254,
+                                        "digits_avg": 91.50504552168447,
+                                        "whitespace_avg": 668.0738262038476,
+                                        "word_avg": 668.8276333338711,
+                                        "line_avg": 46.960125052852575
+                    }
+}
