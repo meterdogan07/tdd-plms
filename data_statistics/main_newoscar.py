@@ -21,8 +21,8 @@ def main():
     ct_doc = 0
     G_params = [0,0,0,0,0,0,0,0,0,0,0]
 
-    formatted_dataset = open("/kuacc/users/merdogan18/hpc_run/tdd-plms2/data_statistics/Processed-newoscar/newoscar_data_formatted2.json", "a")
-    count_dictionaries = open("/kuacc/users/merdogan18/hpc_run/tdd-plms2/data_statistics/Processed-newoscar/newoscar_stats_formatted2.json", "a")
+    formatted_dataset = open("/kuacc/users/merdogan18/hpc_run/tdd-plms/data_statistics/Processed-newoscar/newoscar_data_formatted.json", "a")
+    count_dictionaries = open("/kuacc/users/merdogan18/hpc_run/tdd-plms/data_statistics/Processed-newoscar/newoscar_stats_formatted.json", "a")
     
     for doc_num in range(1,51):
         print(doc_num)
@@ -104,32 +104,6 @@ def main():
         count_dictionaries.write("\n")
 
         dict_count = {}
-        
-        """avg_dict_count[str(doc_num)]["size(GB)_total"] = os.path.getsize(dir_name)/(1024*1024*1024)
-
-        avg_dict_count[str(doc_num)]["length_total"] = params[10]
-        avg_dict_count[str(doc_num)]["nltk_word_total"] = params[0]
-        avg_dict_count[str(doc_num)]["nltk_sentence_total"] = params[1]
-        avg_dict_count[str(doc_num)]["punctutation_total"] = params[2]
-        avg_dict_count[str(doc_num)]["ascii_letters_total"] = params[3]
-        avg_dict_count[str(doc_num)]["ascii_lowercase_total"] = params[4]
-        avg_dict_count[str(doc_num)]["ascii_uppercase_total"] = params[5]
-        avg_dict_count[str(doc_num)]["digits_total"] = params[6]
-        avg_dict_count[str(doc_num)]["whitespace_total"] = params[7]
-        avg_dict_count[str(doc_num)]["word_total"] = params[8]
-        avg_dict_count[str(doc_num)]["line_total"] = params[9]
-
-        avg_dict_count[str(doc_num)]["length_avg"] = params[10]/len(data_ins)
-        avg_dict_count[str(doc_num)]["nltk_word_avg"] = params[0]/len(data_ins)
-        avg_dict_count[str(doc_num)]["nltk_sentence_avg"] = params[1]/len(data_ins)
-        avg_dict_count[str(doc_num)]["punctutation_avg"] = params[2]/len(data_ins)
-        avg_dict_count[str(doc_num)]["ascii_letters_avg"] = params[3]/len(data_ins)
-        avg_dict_count[str(doc_num)]["ascii_lowercase_avg"] = params[4]/len(data_ins)
-        avg_dict_count[str(doc_num)]["ascii_uppercase_avg"] = params[5]/len(data_ins)
-        avg_dict_count[str(doc_num)]["digits_avg"] = params[6]/len(data_ins)
-        avg_dict_count[str(doc_num)]["whitespace_avg"] = params[7]/len(data_ins)
-        avg_dict_count[str(doc_num)]["word_avg"] = params[8]/len(data_ins)
-        avg_dict_count[str(doc_num)]["line_avg"] = params[9]/len(data_ins)"""
 
     avg_dict_count["all"] = {}
     avg_dict_count["all"]["size(GB)"] = total_filesize/(1024*1024*1024)
@@ -161,7 +135,7 @@ def main():
 
     # Writing to sample.json
     total_json_object = json.dumps(avg_dict_count, indent=20, ensure_ascii=False)
-    with open("/kuacc/users/merdogan18/hpc_run/tdd-plms2/data_statistics/Processed-newoscar/summary_newoscar_stats_formatted2.json", "w") as outfile:
+    with open("/kuacc/users/merdogan18/hpc_run/tdd-plms/data_statistics/Processed-newoscar/summary_newoscar_stats_formatted.json", "w") as outfile:
         outfile.write(total_json_object)
 
     formatted_dataset.close()
